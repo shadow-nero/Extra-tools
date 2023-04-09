@@ -6,10 +6,11 @@ class Program
 {
     static void Main()
     {
-      ExtractDat();
+      string DatText = ExtractDat();
+      File.WriteAllText(Path.Combine("Texto.txt", DatText);
     }
   
-  public static void ExtractDat(){
+  public static string ExtractDat(){
         // Nome do DAT que será extraido o Texto
         string arquivo = "0000.dat";
         // Localização do texto inicial do Texto
@@ -57,6 +58,7 @@ class Program
     }*/
     string saida = Unir(Texto);
     Console.WriteLine(saida);
+    return saida;
     }
           public static string Unir(List<string> listaDeStrings)
         {
